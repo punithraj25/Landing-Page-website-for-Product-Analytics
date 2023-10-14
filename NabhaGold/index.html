@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabha Gold</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul class="nav-list">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#productspage">Our Products</a></li>
+            <li><a href="#calculatepage">Calculate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    
+<div class="container" id="homepage">
+    <main class="main">
+        <div class="main_item">
+            <h1 class="main_title">Nabha Gold</h1>
+            <p class="main_text">All jewerlies made with love for each person</p>
+            <a href="#calculatepage" class="link">Calculate and order</a>
+        </div>
+        <div class="main_images">
+            <img src="https://images.unsplash.com/photo-1584811644165-33db3b146db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" width="352" height="536" alt="max-image">
+            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" width="233" height="318" alt="min-image">
+        </div>
+    </main>
+    <section class="products" id="productspage">
+        <h2 class="title-h2">Our products</h2>
+        <div class="grid">
+            <div class="grid_cover">
+                <img src="https://images.unsplash.com/photo-1608508644127-ba99d7732fee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fGpld2Vscnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="grid_cover">
+                <img src="https://images.unsplash.com/photo-1625792508553-5e66a81659fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="grid_cover">
+                <img src="https://images.unsplash.com/photo-1631965004544-1762fc696476?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGpld2VsbGVyeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+            <div class="grid_cover">
+                <img src="https://images.unsplash.com/photo-1599458349289-18f0ee82e6ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGpld2Vscnl8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" alt="">
+            </div>
+        </div>
+    </section>
+    <div class="cost" id="calculatepage">
+        <div class="cost_title">
+            <svg class="circle" width="200" viewBox="0 0 200 200">
+                <path id="circleShape" class="circle_shape" d="M 20, 100 a 80, 80 0 1, 1 160, 0 a 80,80 0 1, 1 -160, 0" fill="none"></path>
+                <path class="circle_arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#2B2024" stroke-width="2"></path>
+                <text class="circle_text">
+                    <textPath href="#circleShape">
+                        Calculate price of product
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="cost_calc">
+            <form class="form">
+                <p class="form_text">Choose your product (Gold Price ₹5,350/g)</p>
+                <select class="form_select" id="selectProduct">
+                    <option value="0" selected disabled>Select from list</option>
+                    <option value="18">Bracelet (18g)</option>
+                    <option value="16">Earrings (16g)</option>
+                    <option value="10">Ring (10g)</option>
+                    <option value="22">Chain (22g)</option>
+                    <option value="3">Nose Ring (3g)</option>
+                </select>
+                <p class="form_text">Number of pieces:</p>
+                <input id="quantityProduct" class="form_input" type="number" value="0" min="0">
+                <button type="button" class="link" id="btnProduct">Calculate</button>
+            </form>
+            <div id="infoProduct" class="total" style="display:none;">
+                <p class="total_price">Total: ₹ <span id="priceProduct"></span></p>
+                <p class="total_info">Leave your order by email: <a href="mailto:rajpunith469@gmail.com" target="https://mail.google.com/mail/u/0/#inbox?compose=new" class="total_email">rajpunith469@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
