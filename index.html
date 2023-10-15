@@ -20,34 +20,40 @@
 </head>
 <body>
 
-    <div class="navigation">
-        <ul class="nav-list">
-            <li><a href="#homepage">Home</a></li>
-            <script>
-  document.getElementById("homeclick").addEventListener("click", function() {
-    gtag('event', 'home_click');
-  });
+<div class="navigation">
+    <ul class="nav-list">
+        <li><a href="#homepage" id="homeLink">Home</a></li>
+        <li><a href="#productspage" id="productsLink">Our Products</a></li>
+        <li><a href="#calculatepage" id="calculateLink">Calculate</a></li>
+        <li><a href="contact.html" id="contactLink">Contact</a></li>
+    </ul>
+</div>
+
+<script>
+    document.getElementById("homeLink").addEventListener("click", function() {
+        gtag('event', 'homepage_click', {
+            'event_label': 'Home',
+        });
+    });
+
+    document.getElementById("productsLink").addEventListener("click", function() {
+        gtag('event', 'ourproductspage_click', {
+            'event_label': 'Our Products',
+        });
+    });
+
+    document.getElementById("calculateLink").addEventListener("click", function() {
+        gtag('event', 'calculatepage_click', {
+            'event_label': 'Calculate',
+        });
+    });
+
+    document.getElementById("contactLink").addEventListener("click", function() {
+        gtag('event', 'contactpage_click', {
+            'event_label': 'Contact',
+        });
+    });
 </script>
-            <li><a href="#productspage">Our Products</a></li> 
-            <script>
-  document.getElementById("productclick").addEventListener("click", function() {
-    gtag('event', 'ourproduct_click');
-  });
-</script>
-            <li><a href="#calculatepage">Calculate</a></li>
-               <script>
-  document.getElementById("calculatepageclick").addEventListener("click", function() {
-    gtag('event', 'calculatepage_click');
-  });
-</script>
-            <li><a href="contact.html">Contact</a></li>
-               <script>
-  document.getElementById("contactcLink").addEventListener("click", function() {
-    gtag('event', 'contact_click');
-  });
-</script>
-        </ul>
-    </div>
     
 <div class="container" id="homepage">
     <main class="main">
