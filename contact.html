@@ -11,18 +11,6 @@
   gtag('config', 'G-3C0T7EPCXT');
 </script>
 
-    <!-- Tracking Navigation button clicks -->
-<script>
-document.querySelectorAll(".nav-list a").forEach(function(link) {
-  link.addEventListener("click", function(event) {
-    gtag('event', 'click', {
-      'event_category': 'Navigation Click',
-      'event_label': event.target.textContent,
-    });
-  });
-});
-
-</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -152,14 +140,7 @@ document.querySelectorAll(".nav-list a").forEach(function(link) {
             <br>
             <!-- Embed Google Map -->
             <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15592.395478896431!2d76.6512659!3d12.3091283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7172664902a9%3A0x62700bfb2266869a!2sNabha%20Gold!5e0!3m2!1sen!2sin!4v1696874462505!5m2!1sen!2sin&ll=12.3091283,76.6512659" width="600" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <script>
-  function trackGoogleMapClick() {
-    gtag('event', 'click', {
-      'event_category': 'Google Map Click',
-      'event_label': 'Contact Page',
-    });
-  }
-</script>
+      
         </section>
     </div>
 </body>
