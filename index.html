@@ -36,11 +36,7 @@
             <p class="main_text">All jewellery made with love for each person</p>
             <a href="#calculatepage" class="link">Calculate and order</a>
         </div>
-        <script>
-  document.getElementById("btnProduct").addEventListener("click", function() {
-    gtag('event', 'product_click');
-  });
-</script>
+        
         <div class="main_images">
             <img src="https://4.bp.blogspot.com/-QHkcsYhR-zI/UeNlJtFvcqI/AAAAAAAABvU/6vQE00rC_9E/s1600/bride.jpg" width="452" height="536" alt="max-image">
             <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" width="233" height="318" alt="min-image">
@@ -90,6 +86,11 @@
                 <input id="quantityProduct" class="form_input" type="number" value="0" min="0">
                 <button type="button" class="link" id="btnProduct">Calculate</button>
             </form>
+            <script>
+  document.getElementById("btnProduct").addEventListener("click", function() {
+    gtag('event', 'product_click');
+  });
+</script>
             <div id="infoProduct" class="total" style="display:none;">
                 <p class="total_price">Total: ₹ <span id="priceProduct"></span></p>
                 <p class="total_info">Leave your order by email: <a href="mailto:rajpunith469@gmail.com" target="https://mail.google.com/mail/u/0/#inbox?compose=new" class="total_email">rajpunith469@gmail.com</a></p>
