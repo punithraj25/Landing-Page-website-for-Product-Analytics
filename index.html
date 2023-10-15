@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-54KWSWP7');</script>
-<!-- End Google Tag Manager -->
-    
+<head>    
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3C0T7EPCXT"></script>
 <script>
@@ -17,38 +9,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('js', new Date());
 
   gtag('config', 'G-3C0T7EPCXT');
-</script>
-
-    <!-- Tracking Calculate and order button clicks -->
-<script>
-document.getElementById("btnProduct").addEventListener("click", function() {
-  gtag('event', 'click', {
-    'event_category': 'Button Click',
-    'event_label': 'Calculate and Order',
-  });
-});
-</script>
-
-<!--Tracking the email link click event-->
-<script>
-document.querySelector(".total_email").addEventListener("click", function() {
-  gtag('event', 'click', {
-    'event_category': 'Email Link Click',
-    'event_label': 'rajpunith469@gmail.com',
-  });
-});
-</script>
-
-<!--Tracking navigation bar clicks-->
-<script>
-document.querySelectorAll(".nav-list a").forEach(function(link) {
-  link.addEventListener("click", function(event) {
-    gtag('event', 'click', {
-      'event_category': 'Navigation Click',
-      'event_label': event.target.textContent,
-    });
-  });
-});
 </script>
     
     <meta charset="UTF-8">
@@ -59,10 +19,7 @@ document.querySelectorAll(".nav-list a").forEach(function(link) {
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54KWSWP7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
     <div class="navigation">
         <ul class="nav-list">
             <li><a href="#homepage">Home</a></li>
