@@ -33,7 +33,7 @@
 
     navigationLinks.forEach((link, index) => {
         link.addEventListener("click", function() {
-            for (let i = 0; i < 1000; i++) {
+            for (let i = 0; i < 10000; i++) {
                 let eventLabel = link.textContent + '_' + i;
                 let eventName = link.getAttribute("id") + "_click";
                 gtag('event', eventName, {
@@ -44,7 +44,7 @@
     });
 
     document.getElementById("homeLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 10000; i++) {
             gtag('event', 'homepage_click', {
                 'event_label': 'Home_' + i,
             });
@@ -52,7 +52,7 @@
     });
 
     document.getElementById("productsLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 10000; i++) {
             gtag('event', 'ourproductspage_click', {
                 'event_label': 'Our Products_' + i,
             });
@@ -60,7 +60,7 @@
     });
 
     document.getElementById("calculateLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 10000; i++) {
             gtag('event', 'calculatepage_click', {
                 'event_label': 'Calculate_' + i,
             });
@@ -68,7 +68,7 @@
     });
 
     document.getElementById("contactLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000; i++) {
+        for (let i = 0; i < 10000; i++) {
             gtag('event', 'contactpage_click', {
                 'event_label': 'Contact_' + i,
             });
