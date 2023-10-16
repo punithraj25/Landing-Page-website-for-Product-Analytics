@@ -29,20 +29,6 @@
     </ul>
 </div>
 <script>
-    const navigationLinks = document.querySelectorAll(".nav-list a");
-
-    navigationLinks.forEach((link, index) => {
-        link.addEventListener("click", function() {
-            for (let i = 0; i < 10000; i++) {
-                let eventLabel = link.textContent + '_' + i;
-                let eventName = link.getAttribute("id") + "_click";
-                gtag('event', eventName, {
-                    'event_label': eventLabel,
-                });
-            }
-        });
-    });
-
     document.getElementById("homeLink").addEventListener("click", function() {
         for (let i = 0; i < 10000; i++) {
             gtag('event', 'homepage_click', {
