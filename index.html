@@ -28,34 +28,51 @@
         <li><a href="contact.html" id="contactLink">Contact</a></li>
     </ul>
 </div>
-
 <script>
-    
+    const navigationLinks = document.querySelectorAll(".nav-list a");
+
+    navigationLinks.forEach((link, index) => {
+        link.addEventListener("click", function() {
+            for (let i = 0; i < 1000; i++) {
+                let eventLabel = link.textContent + '_' + i;
+                let eventName = link.getAttribute("id") + "_click";
+                gtag('event', eventName, {
+                    'event_label': eventLabel,
+                });
+            }
+        });
+    });
+
     document.getElementById("homeLink").addEventListener("click", function() {
-        for (let i = 0; i < 100000; i++) {
+        for (let i = 0; i < 1000; i++) {
             gtag('event', 'homepage_click', {
-                'event_label': 'Home_' + i, // Corrected event label
+                'event_label': 'Home_' + i,
             });
         }
     });
 
-
     document.getElementById("productsLink").addEventListener("click", function() {
+        for (let i = 0; i < 1000; i++) {
             gtag('event', 'ourproductspage_click', {
-                'event_label': 'Our Products',
-        });
+                'event_label': 'Our Products_' + i,
+            });
+        }
     });
 
     document.getElementById("calculateLink").addEventListener("click", function() {
-        gtag('event', 'calculatepage_click', {
-            'event_label': 'Calculate',
-        });
+        for (let i = 0; i < 1000; i++) {
+            gtag('event', 'calculatepage_click', {
+                'event_label': 'Calculate_' + i,
+            });
+        }
     });
 
     document.getElementById("contactLink").addEventListener("click", function() {
-        gtag('event', 'contactpage_click', {
-            'event_label': 'Contact',
-        });
+        for (let i = 0; i < 1000; i++) {
+            gtag('event', 'contactpage_click', {
+                'event_label': 'Contact_' + i,
+            });
+        }
     });
 </script>
     
@@ -130,6 +147,5 @@
     </div>
 </div>
     <script src="script.js"></script>
-    <script src="eventincrease.js"></script>
 </body>
 </html>
