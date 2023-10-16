@@ -41,9 +41,11 @@
 
 
     document.getElementById("productsLink").addEventListener("click", function() {
-        gtag('event', 'ourproductspage_click', {
-            'event_label': 'Our Products',
+        for (let j = 0; i < 100000; j++) {
+            gtag('event', 'ourproductspage_click', {
+                'event_label': 'Our Products' + j,
         });
+        }
     });
 
     document.getElementById("calculateLink").addEventListener("click", function() {
