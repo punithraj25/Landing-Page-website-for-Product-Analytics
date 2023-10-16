@@ -31,9 +31,11 @@
 
 <script>
     document.getElementById("homeLink").addEventListener("click", function() {
+        for (let i = 0; i < 100000; i++) {
         gtag('event', 'homepage_click', {
-            'event_label': 'Home',
+            'event_label': 'Home',+i,
         });
+        }
     });
 
     document.getElementById("productsLink").addEventListener("click", function() {
@@ -67,6 +69,7 @@
             <img src="https://4.bp.blogspot.com/-QHkcsYhR-zI/UeNlJtFvcqI/AAAAAAAABvU/6vQE00rC_9E/s1600/bride.jpg" width="452" height="536" alt="max-image">
             <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80" width="233" height="318" alt="min-image">
         </div>
+        
     </main>
     <section class="products" id="productspage">
         <h2 class="title-h2">Our products</h2>
