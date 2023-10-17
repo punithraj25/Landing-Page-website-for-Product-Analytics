@@ -30,7 +30,7 @@
 </div>
 <script>
     document.getElementById("homeLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000000; i++) {
+        for (let i = 0; i < 1; i++) {
             gtag('event', 'homepage_click', {
                 'event_label': 'Home_' + i,
             });
@@ -46,7 +46,7 @@
     });
 
     document.getElementById("calculateLink").addEventListener("click", function() {
-        for (let i = 0; i < 1000000; i++) {
+        for (let i = 0; i < 100000000; i++) {
             gtag('event', 'calculatepage_click', {
                 'event_label': 'Calculate',
             });
