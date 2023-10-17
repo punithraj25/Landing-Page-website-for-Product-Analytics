@@ -130,11 +130,9 @@
                 <p class="total_info">For Further details and to place order, contact: <a href="tel:+919449128645">+91 9449128645</a></p>
             </div>
             <script>
-    const phoneNumberLink = document.getElementById("phoneNumberLink");
-
-    phoneNumberLink.addEventListener("click", function() {
-        for (let i = 0; i < 100000; i++) {
-            gtag('event', 'buynow', {
+                document.getElementById("phoneNumberLink").addEventListener("click", function() {
+        for (let i = 0; i < 10000000; i++) {
+            gtag('event', 'buynow_click', {
                 'event_label': 'Phone Number Clicked',
             });
         }
