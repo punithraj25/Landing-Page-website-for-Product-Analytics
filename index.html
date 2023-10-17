@@ -122,7 +122,11 @@
             </form>
             <script>
   document.getElementById("btnProduct").addEventListener("click", function() {
-    gtag('event', 'Calculate_click');
+      for (let i = 0; i < 100000; i++) {
+    gtag('event', 'Calculate_click', {
+        'event_label': 'Calculate button',
+  });
+      }
   });
 </script>
             <div id="infoProduct" class="total" style="display:none;">
